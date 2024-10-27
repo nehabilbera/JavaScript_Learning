@@ -1,0 +1,90 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ff5e62;
+    margin-bottom: 20px;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+button {
+    background-color: #ff5e62;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff9966;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: green;
+}
+
+#desc {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: green;
+}
+
+#weight-guide {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#weight-guide h3 {
+    font-size: 1.1em;
+    color: #ff5e62;
+    margin-bottom: 10px;
+}
+
+#weight-guide p {
+    font-size: 0.9em;
+}
