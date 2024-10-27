@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Myself Neha Gupta</h1>
+    <button id="stop">Stop</button>
+</body>
+
+
+<script>
+    const sayRani = function(){
+    console.log("Rani");
+}
+
+// setInterval(sayRani,1000);
+
+const textChange = function(){
+    document.querySelector('h1').innerHTML = "Myself Rani !!"
+}
+
+const change = setInterval(textChange,1000);
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(change);
+    console.log("STOPPED !!");
+})
+</script>
+</html>

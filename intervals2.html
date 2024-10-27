@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervals</title>
+</head>
+<body>
+    <center>
+        <h1>JavaScript</h1>
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+    </center>
+</body>
+<script>
+    const start = document.getElementById('start');
+    const stop = document.getElementById('stop');
+    const text = document.querySelector('h1').innerHTML;
+
+    // console.log(start);
+    // console.log(stop);
+    // console.log(text);
+    
+    let cnt = 1;
+    const name = function(){
+        console.log(text,cnt++);
+    }
+
+    let set;
+    start.addEventListener('click',function(){
+        set = setInterval(name,1000);
+    })
+
+    stop.addEventListener('click',function(){
+        clearTimeout(set);
+        console.log("Stop");
+    })
+    
+</script>
+</html>
